@@ -15,7 +15,7 @@ SOLUTION
 Implemented an Nginx application using a Kubernetes Deployment with 3 replicas and exposed it through a ClusterIP Service. Kubernetes Service Discovery and CoreDNS were used to provide a stable DNS name and virtual IP for accessing the application. This eliminated dependency on dynamic Pod IPs, enabled internal load balancing, and ensured uninterrupted communication even when Pods were recreated through Kubernetes self-healing.
 
 WHY DEPLOYEMENT?
-If pods are created directlt the application will fail if the pod crashes and there's no auto recovery.Deployment manages pods through replica sets.
+If pods are created directly the application will fail if the pod crashes and there's no auto recovery.Deployment manages pods through replica sets.
 
 WHY LABELS?
 when the pod crashes the replicaset will automatically create a new pod even before the pod is crashed. everytime the new pod is created the ip address of the pod get changed. It is difficult to identify. So we give labels to each pod as identity.
