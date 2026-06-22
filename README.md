@@ -5,7 +5,7 @@ Then the application should always be available
 1. If pod crashes, the application should be available
 2. Application should not depend on pod ip's
 3. Internal service should communicate securely.
-4. Application should be accessiblefrom outside cluster
+4. Application should be accessible from outside cluster
 5. Traffic should be distributed across multiple pods.
 
 PROBLEM STATEMENT
